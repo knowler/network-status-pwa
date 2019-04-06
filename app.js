@@ -3,7 +3,7 @@ const status = document.createElement('h1')
 
 // Status change handler
 const setStatus = value => {
-  status.textContent = `We are ${value ? 'online' : 'offline'}.`
+  status.textContent = `You are ${value ? 'online' : 'offline'}.`
 }
 
 // Set the initial status
