@@ -1,7 +1,14 @@
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open('network-status-v1')
-      .then(cache => cache.addAll(['/', '/app.js']))
+      .then(cache => cache.addAll([
+        '/',
+        '/app.js',
+        '/app-icon.png',
+        '/app-splash.png',
+        '/favicon.png',
+        '/manifest.json',
+      ]))
   )
 })
 
