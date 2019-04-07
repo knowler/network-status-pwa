@@ -3,6 +3,7 @@ self.addEventListener('install', event => {
     caches.open('network-status-v1')
       .then(cache => cache.addAll([
         '/',
+        '/app.css',
         '/app.js',
         '/app-icon.png',
         '/app-splash.png',
